@@ -13,7 +13,16 @@ Amethyst requires several parameters for the analysis process:<br>
 <br>
 **Reference Sequence (Protein)**: This is the wild-type protein sequence of your mutagenesis ORF. **Protein sequence should be in upper case.** Note that you should only input the sequence of the segment in which the mutagenesis is introduced rather than the whole protein.<br>
 <br>
+**Input Files**: These should be the paired-end sequencing files before merging, usually acquired directly from NGS. This pipeline aims to identify the enrichment of each variant between the control group and the experiment group. For example, if you are screening for Gain-Of-Function (GOF) variants, the control group could be the entirety of cells before sorting or the low bin collected during sorting, and the experiment group should be the high bin collected during sorting. The files can be in either .fastq or .fastq.gz format. <br>
+<br>
+**Output PDF Filename**: Input the desired name for the heatmap that is to be generated. It will be in the same folder as the input files.<br>
 
 ## Citations
-This release integrates the following third-party tools:
+This release integrates the following third-party tools:<br>
 **NGmerge**: Gaspar JM. BMC Bioinformatics. 2018 Dec 20;19(1):536.
+
+## License
+Copyright (c) 2025 Yu Meng (yu.meng@epfl.ch)<br>
+<br>
+This project is licensed under the MIT License.<br>
+See the LICENSE file for details.<br>
