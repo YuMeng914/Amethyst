@@ -1,5 +1,5 @@
 # Amethyst
-Amethyst is a pipeline for analysis of Deep Mutational Scanning (DMS) sequencing data. This release features a GUI which allows users to easily install and operate, and generates a heatmap which visualizes the enrichment of each variant in the DMS library. Also by integrating NGmerge (Gaspar JM, 2018) into this pipeline, users can directly upload the paired-end sequencing data acquired from NGS.
+Amethyst is a pipeline for analysis of Deep Mutational Scanning (DMS) sequencing data. This release features a GUI which allows users to easily install and operate, and generates a heatmap which visualizes the enrichment of each variant in the DMS library. Also by integrating NGmerge (Gaspar JM, 2018) into this pipeline, users can directly upload the paired-end sequencing data acquired from NGS. The enrichment score for each variant is calculated as the logfold change of its percentage in experiment group compared to that in control group. Variants with read counts below 20 are filtered out to reduce bias. 
 
 ## Installation
 Amethyst v1.0.0 is a software designed for MacOS. Download AmethystPipeline.dmg from release, open it, and drag the Amethyst app icon to **Applications** folder. When opening the Amethyst app for the first time, **Right-click** the icon and choose **Open**.
