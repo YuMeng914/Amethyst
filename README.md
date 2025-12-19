@@ -1,8 +1,14 @@
 # Amethyst
-Amethyst is a pipeline for analysis of Deep Mutational Scanning (DMS) sequencing data. This release features a GUI which allows users to easily install and operate, and generates a heatmap which visualizes the enrichment of each variant in the DMS library. Also by integrating NGmerge (Gaspar JM, 2018) into this pipeline, users can directly upload the paired-end sequencing data acquired from NGS. The enrichment score for each variant is calculated as the logfold change of its percentage in experiment group compared to that in control group. Variants with read counts below 20 are filtered out to reduce bias. 
+Amethyst is a pipeline for analysis of Deep Mutational Scanning (DMS) sequencing data. This release features a GUI which allows users to easily install and operate, and generates a heatmap which visualizes the enrichment of each variant in the DMS library. Also by integrating NGmerge (Gaspar JM, 2018) into this pipeline, users can directly upload the paired-end sequencing data acquired from NGS. The enrichment score for each variant is calculated as the logfold change of its percentage in experiment group compared to that in control group. Variants with read counts below 20 are filtered out to reduce bias. <br>
 
 ## Installation
-Amethyst v1.0.0 is a software designed for MacOS. Download AmethystPipeline.dmg from release, open it, and drag the Amethyst app icon to **Applications** folder. When opening the Amethyst app for the first time, **Right-click** the icon and choose **Open**.
+Amethyst v1.0.0 is a software designed for MacOS. Download AmethystPipeline.dmg from release, open it, and drag the Amethyst app icon to **Applications** folder.<br>
+<br>
+Note that this software is developed for macOS but is not signed or notarized by Apple. Hence, when running the software for the first time, macOS may display a security warning. This is expected for open-source research software. To allow execution:<br>
+1. Open **System Settings → Privacy & Security**<br>
+2. Scroll down to **Security**<br>
+3. Click **"Allow Anyway"**<br>
+4. Re-run the software<br>
 
 ## Usage
 Amethyst requires several parameters for the analysis process:<br>
